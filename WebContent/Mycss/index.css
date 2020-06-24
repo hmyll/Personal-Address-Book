@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 22px;
+	font-family: 'Verdana', 'Arial';
+	color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+	background: url(../images/timg.jpg) no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+.container {
+	width: 400px;
+	height: 350px;
+	border: 2px solid black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* 设置元素的相对于自身的偏移度为负50%(也就是元素自身尺寸的一半)*/
+	transform: translate(-50%, -50%);
+	margin: auto;
+	border-radius: 8px;
+	background-image: url(../images/timg.jpg);
+	background-position: center top;
+	background-size: cover;
+}
+
+.content {
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	z-index: 1;
+	padding: 50px;
+	box-sizing: border-box;
+	
+}
+
+.content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-ms-filter: blur(20px);
+	-o-filter: blur(20px);
+	filter: blur(20px);
+	z-index: -1;
+	margin: -30px;
+	background-image: url(../images/timg.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+h2{
+	text-align: center;
+}
+form{
+	position:relative;
+	width:220px;
+	height:200px;
+	margin-top:25px;
+}
+.txt{
+	width:120px;
+	float:right;
+}
+.p1{
+	margin-top:5px;
+	float: left;
+}
+.p2{
+	margin-top:10px;
+	float: left;
+}
+
+.btn1{
+	position:absolute;
+	margin-top:40px;
+	left:10px;
+	width:50px;
+	height:40px;
+	background:url("bg11.jpg") no-repeat left top;
+	color:#FFF;
+}
+.btn2{
+	position:absolute;
+	margin-top:40px;
+	left:80px;
+	width:50px;
+	height:40px;
+	background:url("bg11.jpg") no-repeat left top;
+	color:#FFF;
+}
+.btn3{
+	position:absolute;
+	margin-top:40px;
+	margin-left:90px;
+	width:50px;
+	height:40px;
+	background:url("bg11.jpg") no-repeat left top;
+	color:#FFF;
+}
+.btn4{
+	position:absolute;
+	margin-top:40px;
+	left:30px;
+	width:50px;
+	height:40px;
+	background:url("bg11.jpg") no-repeat left top;
+	color:#FFF;
+}
+.btn5{
+	position:absolute;
+	margin-top:40px;
+	left:120px;
+	width:50px;
+	height:40px;
+	background:url("bg11.jpg") no-repeat left top;
+	color:#FFF;
+}
+.txt,submit{
+	font-family:"Arial", "Tahoma", "微软雅黑", "雅黑";
+	border:0;
+	vertical-align:middle;
+	margin:8px;
+	line-height:18px;
+	font-size:18px;
+} 
+
+
+
+

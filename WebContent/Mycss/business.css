@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 19px;
+	font-family: 'Verdana', 'Arial';
+	color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+	background: url(../images/bj.jpg) no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../images/bj.jpg);
+	background-position: center top;
+	background-size: cover;
+}
+
+.content {
+	width: 1250px;
+	height: 650px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 100px;
+	border-radius: 8px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	z-index: 1;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-ms-filter: blur(20px);
+	-o-filter: blur(20px);
+	filter: blur(20px);
+	z-index: -1;
+	margin: -30px;
+	background-image: url(../images/bj.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.tou{
+	
+	text-align: center;
+	height:40px;
+}
+
+.zuo{
+	position:absolute;
+	left:50px;
+	border-right:2px solid rgb(224, 224, 224);
+	width:210px;
+	height:500px;	
+}
+
+.btn1{
+	position:absolute;
+	margin-top:190px;
+	left:0;
+	width:200px;
+	height:40px;
+	color:#353535;
+}
+
+.btn2{
+	position:absolute;
+	margin-top:250px;
+	left:0;
+	width:200px;
+	height:40px;
+	color:#353535;
+}
+
+.you{
+	position:absolute;
+	right:50px;
+	width:940px;
+	height:500px;
+}
+
+.kuang{
+	width:100%;
+	height:100%;
+}
+
+
+
+
+
+
+
+

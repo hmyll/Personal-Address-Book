@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+form {
+	position: relative;
+	width: 900px;
+	height: 350px;
+}
+
+.txt {
+	height: 30px;
+	width: 220px;
+}
+
+.d1, .d2, .d3 {
+	position: absolute;
+}
+
+.d1 {
+	top: 100px;
+	left: 200px;
+}
+
+.d2 {
+	top: 150px;
+	left: 200px;
+}
+
+.d3 {
+	top: 200px;
+	left: 200px;
+}
+
+.bt1, .bt2 {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+}
+
+.bt1 {
+	top: 300px;
+	left: 230px;
+}
+
+.bt2 {
+	top: 300px;
+	left: 360px;
+}
